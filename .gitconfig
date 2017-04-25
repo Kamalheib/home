@@ -1,0 +1,36 @@
+[user]
+	name = Kamal Heib
+	email = kamalheib1@gmail.com
+
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	grep = auto
+
+[core]
+	abbrev = 12
+	pager = less -r
+	editor = vim
+	whitespace = nowarn
+[log]
+	decorate=true
+
+[color "decorate"]
+	tag = blue
+
+[alias]
+	wdiff = diff --word-diff=color --ignore-all-space
+	slog = log --oneline
+	cp = cherry-pick -s -x
+	fixes = log -1 --pretty=fixes
+	find = log --oneline
+	ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --numstat
+	ld = log --pretty=format:"%C(yellow)%h\\ %C(green)%ad%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=short --graph
+	ls = log --pretty=format:"%C(green)%h\\ %C(yellow)[%ad]%Cred%d\\ %Creset%s%Cblue\\ [%cn]" --decorate --date=relative
+
+[pretty]
+	fixes = Fixes: %h ('%s')
+
+[push]
+	default = matching

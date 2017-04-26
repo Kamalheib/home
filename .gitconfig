@@ -24,7 +24,7 @@
 	slog = log --oneline
 	cp = cherry-pick -s -x
 	fixes = log -1 --pretty=fixes
-	find = log --oneline
+	find = !sh -c 'git slog | grep \"$1\"' -
 	ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%an]" --decorate --numstat
 	ld = log --pretty=format:"%C(yellow)%h\\ %C(green)%ad%Cred%d\\ %Creset%s%Cblue\\ [%an]" --decorate --date=short --graph
 	ls = log --pretty=format:"%C(green)%h\\ %C(yellow)[%ad]%Cred%d\\ %Creset%s%Cblue\\ [%an]" --decorate --date=relative

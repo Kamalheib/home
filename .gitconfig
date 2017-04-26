@@ -20,14 +20,26 @@
 	tag = blue
 
 [alias]
-	wdiff = diff --word-diff=color --ignore-all-space
-	slog = log --oneline
+	a = add
+	d = diff
+	s = status
+	c = commit -v -s
+	ca = commit --amend -v
+	co = checkout
+	cob = checkout -b
 	cp = cherry-pick -s -x
-	fixes = log -1 --pretty=fixes
-	find = !sh -c 'git slog | grep \"$1\"' -
+	db = branch -D
+	ri = rebase -i
+	p = push
+	pf = push --force
+
+	slog = log --oneline
 	ll = log --pretty=format:"%C(yellow)%h%Cred%d\\ %Creset%s%Cblue\\ [%an]" --decorate --numstat
 	ld = log --pretty=format:"%C(yellow)%h\\ %C(green)%ad%Cred%d\\ %Creset%s%Cblue\\ [%an]" --decorate --date=short --graph
 	ls = log --pretty=format:"%C(green)%h\\ %C(yellow)[%ad]%Cred%d\\ %Creset%s%Cblue\\ [%an]" --decorate --date=relative
+
+	fixes = log -1 --pretty=fixes
+	find = !sh -c 'git slog | grep \"$1\"' -
 
 [pretty]
 	fixes = Fixes: %h ('%s')

@@ -22,6 +22,7 @@
 [alias]
 	a = add
 	d = diff
+	b = branch
 	s = status
 	c = commit -v -s
 	ca = commit --amend -v

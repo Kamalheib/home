@@ -23,6 +23,7 @@
 	a = add
 	d = diff
 	b = branch
+	bl = blame
 	s = status
 	c = commit -v -s
 	ca = commit --amend -v

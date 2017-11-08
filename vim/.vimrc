@@ -14,7 +14,7 @@ set t_Co=256
 set number
 
 " Highlight search terms
-" set hlsearch
+set hlsearch
 
 " Show search matches as you type
 set incsearch
@@ -22,4 +22,8 @@ set incsearch
 " Use file type plugins
 filetype plugin indent on
 
+" For linux kernel plugin
 let g:linuxsty_patterns = [ "/linux/", "/kernel/" ]
+
+" Colorscheme
+colorscheme pablo

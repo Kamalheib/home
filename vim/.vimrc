@@ -1,5 +1,5 @@
 " Powerline
-set rtp+=/usr/share/powerline/bindings/vim/
+set  rtp+=/usr/lib/python3.6/site-packages/powerline/bindings/vim
 
 " Change the terminal's title
 set title
@@ -23,7 +23,11 @@ set incsearch
 filetype plugin indent on
 
 " For linux kernel plugin
-let g:linuxsty_patterns = [ "/linux/", "/kernel/" ]
+let g:linuxsty_patterns = [ "/linux/", "/kernel/", "qemu" ]
 
-" Colorscheme
-colorscheme pablo
+
+if has("gui_running")
+	syntax on
+	colorscheme slate
+	set guifont=DroidSansMonoDottedforPowerline\ 11
+endif

@@ -45,7 +45,7 @@
 	find = !sh -c 'git slog | grep \"$1\"' -
 
 [pretty]
-	fixes = Fixes: %h ('%s')
+	fixes = Fixes: %h (\"%s\")
 
 [push]
 	default = matching

@@ -16,6 +16,7 @@ set message_cachedir = "~/.mutt/cache/bodies"
 set certificate_file = "~/.mutt/certificates"
 
 set smtp_url = 'smtps://kamalheib1@gmail.com@smtp.gmail.com:465/'
+set smtp_pass = 'PASSWORD'
 
 set move = no
 set imap_keepalive = 900

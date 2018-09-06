@@ -23,11 +23,11 @@ set incsearch
 filetype plugin indent on
 
 " For linux kernel plugin
-let g:linuxsty_patterns = [ "/linux/", "/kernel/", "qemu" ]
+let g:linuxsty_patterns = [ "/linux/", "/kernel/", "/qemu/", "/redhat/" ]
 
 
 if has("gui_running")
-	syntax on
-	colorscheme slate
-	set guifont=DroidSansMonoDottedforPowerline\ 11
+      syntax on
+      colorscheme slate
+      set guifont=Ubuntu\ Mono\ derivative\ Powerline\ Regular\ 14
 endif

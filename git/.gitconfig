@@ -10,7 +10,6 @@
 
 [core]
 	abbrev = 12
-	pager = less -r
 	editor = vim
 	whitespace = nowarn
 [log]
